@@ -5,7 +5,17 @@
         	"date":["tpep_dropoff_datetime"],
         	"float":["total_amount"],
 			"replace":[
-				{"description":["*"," replace value "]}
+			{
+				"description":["*"," replace value "]
+			}
 			]
-    }
+    },
+	"sheet1":{
+		"name":"sheetstable",
+		"datetime":[],
+        "date":[],
+		"float":[],
+		"replace":[
+		]
+	}
 }
