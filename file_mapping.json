@@ -1,0 +1,92 @@
+{
+    "call_evaluation":{
+        "table_name":"call_evaluation_data",
+        "class":"daily_call_evaluation",
+        "jar":"ipcc_daily_call_evaluation.jar"
+
+    },
+    "tt_report":{
+        "table_name":"complaints_data",
+        "class":"ipcc_complaints_evaluation",
+        "jar":"ipcc_complaints_evaluation.jar"
+
+    },
+    "callinfo":{
+        "table_name":"call_info_data",
+        "class":"ipcc_call_info_data",
+        "jar":"ipcc_call_info.jar"
+
+    },
+    "login_logs":{
+        "table_name":"login_logs",
+        "class":"cc_activity_log",
+        "jar":"cc_activity_etl.jar"
+
+    },
+    "cdr_logs":{
+        "table_name":"cdr_logs",
+        "class":"cc_activity_log",
+        "jar":"cc_activity_etl.jar"
+
+    },
+    "business_action_logs":{
+        "table_name":"business_action_logs",
+        "class":"cc_activity_log",
+        "jar":"cc_activity_etl.jar"
+
+    },
+    "subscrib_integrate_logs":{
+        "table_name":"subscrib_integrate_logs",
+        "class":"cc_activity_log",
+        "jar":"cc_activity_etl.jar"
+
+    },
+    "payment_logs":{
+        "table_name":"payment_logs",
+        "class":"cc_activity_log",
+        "jar":"cc_activity_etl.jar"
+
+    },
+    "invoice_data":{
+        "table_name":"erp_invoice",
+        "class":"erp_invoices_etl",
+        "jar":"erp_invoices_etl.jar"
+
+    },
+    "payment_data":{
+        "table_name":"erp_payment",
+        "class":"payments_data_etl",
+        "jar":"payments_data_etl.jar"
+
+    },
+    "purchase_order_data":{
+        "table_name":"erp_po",
+        "class":"erp_po_etl",
+        "jar":"erp_po_etl.jar"
+
+    },
+    "supplier_data":{
+        "table_name":"erp_supplier",
+        "class":"erp_suppliers",
+        "jar":"erp_suppliers.jar"
+
+    },
+    "mbb_master":{
+        "table_name":"mbb_master_child_mapping",
+        "class":"class_mbb_master_child_mapping",
+        "jar":"mbb_master_child_mapping.jar"
+    },
+    "employee_function_details":{
+        "table_name":"employee_function_details",
+        "class":"ipcc_employee_function",
+        "jar":"ipcc_employee_function_etl.jar"
+    },
+    "ipcc_roaster_data":{
+        "table_name":"ipcc_roaster_data",
+        "class":"",
+        "jar":""
+    }
+
+}
+
+
