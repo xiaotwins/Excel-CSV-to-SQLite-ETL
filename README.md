@@ -1,6 +1,7 @@
 # Excel-CSV-to-SQLite
 
 Writes all .csv and .xlsx files in the specified directory all with transformation (```datetime columns to format (yyyy-mm-dd hh:mm:ss)/(yyyy-mm-dd)```,```conversion of float columns to int```,```replace values in columns```) into sqlite.db file
+![Architecture](images/img.png)
 
 ## Functionality
 1. List all csv and xlsx files in the specified folder recursively.
