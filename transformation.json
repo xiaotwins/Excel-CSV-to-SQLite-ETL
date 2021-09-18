@@ -1,81 +1,8 @@
 {
-	"call_evaluation_data":{
-        "datetime":["playing_time"],
-        "date":[],
-        "float":[]
-    },
-    "complaints_data":{
-        "datetime":["accepttime"],
-        "date":[],
-        "float":[]
-    },
-    "call_info_data":{
-        "datetime":["callstarttime"],
-        "date":[],
-        "float":[],
-        "replace":[
-            {"serialno":["~",""]},
-            {"contactid":["~",""]},
-	    {"callerno":["~",""]}]
-        
-    },
-    "login_logs":{
-        "datetime":[],
-        "date":["date_time"],
-        "float":[]
-
-    },
-    "cdr_logs":{
-        "datetime":["date_time"],
-        "date":[],
-        "float":[]
-
-    },
-    "business_action_logs":{
-        "datetime":["date"],
-        "date":[],
-        "float":[]
-
-    },
-    "subscrib_integrate_logs":{
-        "datetime":["date_time"],
-        "date":[],
-        "float":[]
-    },
-    "payment_logs":{
-        "datetime":["date_time"],
-        "date":[],
-        "float":["payment"]
-    },
-    "erp_invoice":{
-        "datetime":["creation_date","modified_date","action_date"],
-        "date":[],
-        "float":[]
-
-    },
-    "erp_payment":{
-        "datetime":["check_last_update_date","payment_due_date","creation_date"],
-        "date":["check_date","void_date","payment_date","gl_date","payment_date1"],
-        "float":[]
-    },
-    "erp_po":{
-        "datetime":["po_date","creation_date","modified_date"],
-        "date":[],
-        "float":[]
-    },
-    "erp_supplier":{
-        "datetime":["inactive_date","end_date_active","last_update_date","creation_date"],
-        "date":["account_start_date"],
-        "float":[]
-    },
-    "mbb_master_child_mapping":{
-        "datetime":[],
-        "date":["create_date"],
-        "float":[]
-    },
-    "employee_function_details":{
-        "datetime":[],
-        "date":[],
-        "float":[]
-    }
+	"call_evaluation_data":
+	{
+        	"datetime":["playing_time"],
+        	"date":[],
+        	"float":[]
+    	}
 }
