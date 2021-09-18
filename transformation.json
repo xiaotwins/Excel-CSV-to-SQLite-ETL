@@ -1,8 +1,11 @@
 {
-	"call_evaluation_data":
-	{
-        	"datetime":["playing_time"],
-        	"date":[],
-        	"float":[]
-    	}
+	"taxi":
+	{		"name":"taxidata",
+        	"datetime":["tpep_pickup_datetime"],
+        	"date":["tpep_dropoff_datetime"],
+        	"float":["total_amount"],
+			"replace":[
+				{"description":["*"," replace value "]}
+			]
+    }
 }

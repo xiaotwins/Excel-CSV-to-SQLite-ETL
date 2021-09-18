@@ -27,7 +27,7 @@ def remove_unnecessary_rows_and_cols(df):
 			rows_drop.append(x)
 		else:
 			break
-#	rows_drop.append(x)
+	#	rows_drop.append(x)
 
 	df.drop(df.index[rows_drop],inplace=True)
 	print("Dropped Rows {}".format(rows_drop))
@@ -80,7 +80,7 @@ def read_csv_files(p,file_mapping):
 
 	for f_m in file_mapping:
 		if 	f_m in file_name:
-			file_name=file_mapping[f_m]["table_name"]
+			file_name=file_mapping[f_m]["name"]
 			break
 
 	print("New Dict Key",file_name)
@@ -101,7 +101,7 @@ def read_excel_files(p,file_mapping):
 	print("Formatted Excel Filename: ",file_name)
 
 	# Read xl file
-	xls = pd.ExcelFile(p)
+	xls = pd.ExcelFile(p,engine='openpyxl')
 
 	df_dict={}
 	
@@ -122,7 +122,7 @@ def read_excel_files(p,file_mapping):
 		#		return df_dict
 		for f_m in file_mapping:
 			if 	f_m in file_name:
-				file_name=file_mapping[f_m]["table_name"]
+				file_name=file_mapping[f_m]["name"]
 				break
 		print("New Dict Key",file_name)
 
@@ -150,7 +150,7 @@ def read_excel_files(p,file_mapping):
 			lower_case_sheet_name=x.lower()
 			for f_m in file_mapping:
 				if 	f_m in lower_case_sheet_name:
-					lower_case_sheet_name=file_mapping[f_m]["table_name"]
+					lower_case_sheet_name=file_mapping[f_m]["name"]
 					break
 			print("New Dict Key",file_name)
 

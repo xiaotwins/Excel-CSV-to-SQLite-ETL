@@ -6,18 +6,14 @@ from parser_utils.parser import *
 if __name__ == "__main__":
 	t0 = time.time()
 
-	if len(sys.argv)==5:
-		if path.isdir(sys.argv[1]) and path.isfile(sys.argv[2]) and path.isdir(sys.argv[3]) and path.isfile(sys.argv[4]):
+	if len(sys.argv)==4:
+		if path.isdir(sys.argv[1]) and path.isfile(sys.argv[2]) and path.isdir(sys.argv[3]):
 
-#			Sample paths,
-#			directory='/root/data/yest'
-#			transformation_file='/root/data/transformation.json'
-#			output='/root/data/yest'
 
 			search_directory=sys.argv[1]
 			transformation_file=sys.argv[2]
 			output_directory=sys.argv[3]
-			file_mapping_file=sys.argv[4]
+			
 
 			transformations=None
 			with open(transformation_file) as f:
@@ -26,15 +22,8 @@ if __name__ == "__main__":
 				except:
 					print("Invalid Transformation JSON, exiting")
 					exit()
-			file_mapping=None
-			with open(file_mapping_file) as f:
-				try:
-					file_mapping=json.load(f)
-				except:
-					print("Invalid File Mapping JSON, exiting")
-					exit()
-
-			p=Parser(search_directory,transformations,output_directory,file_mapping)
+			
+			p=Parser(search_directory,transformations,output_directory)
 			no_of_files_found=p.find_files()
 			
 			# If some files found then process them else Exit
