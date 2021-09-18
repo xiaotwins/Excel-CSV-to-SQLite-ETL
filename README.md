@@ -34,3 +34,5 @@ Writes all .csv and .xlsx files in the specified directory all with transformati
 ```python main.py </path/to/data/> </path/to/transformations> </path/to/output/dir>```  
 ```python main.py ./data ./transformation.json .```
   
+
+### reach me on muzi.freelance@gmail.com
